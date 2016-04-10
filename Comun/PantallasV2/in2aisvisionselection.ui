@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>In2AISVisionSelection</class>
+ <widget class="QMainWindow" name="In2AISVisionSelection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>In2 Printing Solutions</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>7</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>7</horstretch>
+           <verstretch>10</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>5</horstretch>
+              <verstretch>8</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QGraphicsView" name="m_gv">
+               <property name="backgroundBrush">
+                <brush brushstyle="Dense1Pattern">
+                 <color alpha="255">
+                  <red>220</red>
+                  <green>220</green>
+                  <blue>220</blue>
+                 </color>
+                </brush>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>5</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="m_twData">
+            <column>
+             <property name="text">
+              <string>T</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>X</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Y</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Angle</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>W</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>H</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>OCR</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>5</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title">
+          <string>Configuracion [Recibida/Enviar]</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QTextEdit" name="m_teRcvString">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="m_teString">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>2</horstretch>
+                <verstretch>1</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_pbSend">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>1</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Enviar</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+              <normaloff>:/res/images/sendimgfija.png</normaloff>:/res/images/sendimgfija.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QFrame" name="frame_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>3</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_12">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_7">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="0" column="0" colspan="3">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="m_pbLoad">
+              <property name="minimumSize">
+               <size>
+                <width>85</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="m_leIniFile">
+              <property name="maximumSize">
+               <size>
+                <width>167</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0" colspan="3">
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="m_pbConfig">
+              <property name="text">
+               <string>Config</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+                <normaloff>:/res/images/Configuracion.png</normaloff>:/res/images/Configuracion.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="m_pbVisionSave">
+              <property name="text">
+               <string>Guardar </string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+                <normaloff>:/res/images/floppy13.png</normaloff>:/res/images/floppy13.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="m_pbVisionLoad">
+              <property name="text">
+               <string>Cargar </string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+                <normaloff>:/res/images/open127.png</normaloff>:/res/images/open127.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="m_pbApagar">
+              <property name="text">
+               <string>Apagar</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+                <normaloff>:/res/images/Cancel_32x32.png</normaloff>:/res/images/Cancel_32x32.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="m_pbReiniciar">
+              <property name="text">
+               <string>Reiniciar</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+                <normaloff>:/res/images/light_on.png</normaloff>:/res/images/light_on.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="m_pbPing">
+            <property name="text">
+             <string>Ping</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+              <normaloff>:/res/images/1rightarrow.png</normaloff>:/res/images/1rightarrow.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="m_pbConectar">
+            <property name="text">
+             <string>App</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+              <normaloff>:/res/images/plug42.png</normaloff>:/res/images/plug42.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2" rowspan="2">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="0" column="0">
+               <widget class="QLabel" name="m_ledEquipo">
+                <property name="maximumSize">
+                 <size>
+                  <width>16</width>
+                  <height>16</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledverde.png</pixmap>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_8">
+                <property name="maximumSize">
+                 <size>
+                  <width>95</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Equipo </string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="m_ledAplicacion">
+                <property name="maximumSize">
+                 <size>
+                  <width>16</width>
+                  <height>16</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledverde.png</pixmap>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLabel" name="label_9">
+                <property name="maximumSize">
+                 <size>
+                  <width>95</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Aplicacion</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="m_leIP">
+              <property name="maximumSize">
+               <size>
+                <width>95</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>192.168.0.1</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="m_pbWOL">
+            <property name="text">
+             <string>WOL</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+              <normaloff>:/res/images/reload.png</normaloff>:/res/images/reload.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="m_pbMapear">
+            <property name="text">
+             <string>Mapear</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+              <normaloff>:/res/images/portopen.png</normaloff>:/res/images/portopen.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="minimumSize">
+               <size>
+                <width>85</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Actual</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="m_leVisionText">
+              <property name="maximumSize">
+               <size>
+                <width>167</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+         <zorder>m_pbPing</zorder>
+         <zorder>m_pbWOL</zorder>
+         <zorder>m_pbConectar</zorder>
+         <zorder>m_pbMapear</zorder>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QFrame" name="frame_6">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="1" column="4">
+             <widget class="QLabel" name="m_lblPos">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>1</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string>0x0</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QLineEdit" name="m_leCy">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>1</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>50</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>50</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>0</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Fx</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Fy</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Cx</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Pos</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLineEdit" name="m_leFactorX">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>1</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>50</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>50</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>0.72</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="m_leFactorY">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>1</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>50</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>50</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>0.78</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLineEdit" name="m_leCx">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>1</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>50</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>50</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>0</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Cy</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title">
+          <string>LOG</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="1" column="2">
+           <widget class="QPushButton" name="m_pbExit">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+              <normaloff>:/res/images/exit.png</normaloff>:/res/images/exit.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="m_pbClearLog">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+              <normaloff>:/res/images/Cancel_32x32.png</normaloff>:/res/images/Cancel_32x32.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="3">
+           <widget class="QTextEdit" name="m_teLog"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+      <zorder>frame_6</zorder>
+      <zorder>groupBox_2</zorder>
+      <zorder>frame_7</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuExit">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionExit"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <addaction name="menuExit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../In2Apps/In2SinglePass/SinglePass/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>

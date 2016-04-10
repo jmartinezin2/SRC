@@ -1,0 +1,2980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PrincipalCMYK</class>
+ <widget class="QMainWindow" name="PrincipalCMYK">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1421</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>In2 Printing Solutions</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+    <normaloff>:/res/images/In2HR.png</normaloff>:/res/images/In2HR.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_16">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="m_tabCentral">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>Imagen</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="0" column="0">
+            <widget class="QTabWidget" name="m_tab">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>7</horstretch>
+               <verstretch>4</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="tab">
+              <attribute name="title">
+               <string>Imagen</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <widget class="QGraphicsView" name="m_viewImagen">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>4</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="backgroundBrush">
+                  <brush brushstyle="Dense6Pattern">
+                   <color alpha="255">
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>255</blue>
+                   </color>
+                  </brush>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLineEdit" name="m_leMessage">
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QScrollArea" name="scrollArea">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>10</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>2518</width>
+                <height>626</height>
+               </rect>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_6">
+               <item row="0" column="0">
+                <widget class="QFrame" name="frame">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>2500</width>
+                   <height>245</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>1600000</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_27">
+                  <item row="0" column="0">
+                   <widget class="QGroupBox" name="m_gbCyan">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="title">
+                     <string>Cyan</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_13">
+                     <item row="0" column="0">
+                      <layout class="QVBoxLayout" name="verticalLayout">
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_14">
+                         <item>
+                          <widget class="QCheckBox" name="m_cbCyanIndex">
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="checked">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout">
+                           <item>
+                            <widget class="QLabel" name="m_ledFlu1">
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label">
+                             <property name="text">
+                              <string>F</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_3">
+                           <item>
+                            <widget class="QLabel" name="m_ledHCyan">
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_2">
+                             <property name="text">
+                              <string>C</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="m_pbPaintCyan">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>25</width>
+                             <height>25</height>
+                            </size>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                             <normaloff>:/res/images/Paint.png</normaloff>:/res/images/Paint.png</iconset>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="m_pbImageCyan">
+                           <property name="maximumSize">
+                            <size>
+                             <width>25</width>
+                             <height>25</height>
+                            </size>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                             <normaloff>:/res/images/kview.png</normaloff>:/res/images/kview.png</iconset>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <spacer name="horizontalSpacer">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item>
+                          <widget class="QFrame" name="frame_3">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_2">
+                            <property name="leftMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="topMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="bottomMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="spacing">
+                             <number>0</number>
+                            </property>
+                            <item row="0" column="0">
+                             <layout class="QHBoxLayout" name="horizontalLayout_2">
+                              <property name="spacing">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QLineEdit" name="m_leCyanPal7">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>7</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leCyanPal6">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>6</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leCyanPal5">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>5</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leCyanPal4">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>4</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leCyanPal3">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>3</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leCyanPal2">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>2</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leCyanPal1">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>1</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leCyanPal0">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>0</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QGraphicsView" name="m_gvliteCyan">
+                       <property name="backgroundBrush">
+                        <brush brushstyle="Dense3Pattern">
+                         <color alpha="125">
+                          <red>0</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QFrame" name="frame_12">
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Plain</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_25">
+                        <item>
+                         <widget class="QRadioButton" name="m_rbCyan1">
+                          <property name="text">
+                           <string>GrayScale</string>
+                          </property>
+                          <property name="checked">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="m_rbCyan2">
+                          <property name="text">
+                           <string>Cyan</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_18">
+                          <property name="maximumSize">
+                           <size>
+                            <width>100</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QGridLayout" name="gridLayout_5"/>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QGroupBox" name="m_gbMagenta">
+                    <property name="title">
+                     <string>Magenta</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_22">
+                     <item row="0" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_16">
+                       <item>
+                        <widget class="QCheckBox" name="m_cbMagentaIndex">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="checked">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_7">
+                         <item>
+                          <widget class="QLabel" name="m_ledFlu2">
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="pixmap">
+                            <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_3">
+                           <property name="text">
+                            <string>F</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_15">
+                         <item>
+                          <widget class="QLabel" name="m_ledHMagenta">
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="pixmap">
+                            <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_4">
+                           <property name="text">
+                            <string>C</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="m_pbPaintMagenta">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>25</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                           <normaloff>:/res/images/Paint.png</normaloff>:/res/images/Paint.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="m_pbImageMagenta">
+                         <property name="maximumSize">
+                          <size>
+                           <width>25</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                           <normaloff>:/res/images/kview.png</normaloff>:/res/images/kview.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_2">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="frame_5">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_10">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="spacing">
+                           <number>0</number>
+                          </property>
+                          <item row="0" column="0">
+                           <layout class="QHBoxLayout" name="horizontalLayout_9">
+                            <property name="spacing">
+                             <number>0</number>
+                            </property>
+                            <item>
+                             <widget class="QLineEdit" name="m_leMagentaPal7">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>7</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leMagentaPal6">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>6</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leMagentaPal5">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>5</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leMagentaPal4">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>4</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leMagentaPal3">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>3</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leMagentaPal2">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>2</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leMagentaPal1">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>1</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leMagentaPal0">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>0</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QGraphicsView" name="m_gvliteMagenta">
+                       <property name="backgroundBrush">
+                        <brush brushstyle="Dense3Pattern">
+                         <color alpha="125">
+                          <red>255</red>
+                          <green>0</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QFrame" name="frame_13">
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Plain</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_26">
+                        <item>
+                         <widget class="QRadioButton" name="m_rbMagenta1">
+                          <property name="text">
+                           <string>GrayScale</string>
+                          </property>
+                          <property name="checked">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="m_rbMagenta2">
+                          <property name="text">
+                           <string>Magenta</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QGroupBox" name="m_gbYellow">
+                    <property name="title">
+                     <string>Yellow</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_25">
+                     <item row="0" column="0">
+                      <layout class="QVBoxLayout" name="verticalLayout_3">
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_18">
+                         <item>
+                          <widget class="QCheckBox" name="m_cbYellowIndex">
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="checked">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_17">
+                           <item>
+                            <widget class="QLabel" name="m_ledFlu3">
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_5">
+                             <property name="text">
+                              <string>F</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_11">
+                           <item>
+                            <widget class="QLabel" name="m_ledHYellow">
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_6">
+                             <property name="text">
+                              <string>C</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="m_pbPaintYellow">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>25</width>
+                             <height>25</height>
+                            </size>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                             <normaloff>:/res/images/Paint.png</normaloff>:/res/images/Paint.png</iconset>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="m_pbImageYellow">
+                           <property name="maximumSize">
+                            <size>
+                             <width>25</width>
+                             <height>25</height>
+                            </size>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                             <normaloff>:/res/images/kview.png</normaloff>:/res/images/kview.png</iconset>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <spacer name="horizontalSpacer_3">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item>
+                          <widget class="QFrame" name="frame_7">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_12">
+                            <property name="leftMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="topMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="bottomMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="spacing">
+                             <number>0</number>
+                            </property>
+                            <item row="0" column="0">
+                             <layout class="QHBoxLayout" name="horizontalLayout_6">
+                              <property name="spacing">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QLineEdit" name="m_leYellowPal7">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>7</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leYellowPal6">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>6</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leYellowPal5">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>5</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leYellowPal4">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>4</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leYellowPal3">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>3</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leYellowPal2">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>2</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leYellowPal1">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>1</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="m_leYellowPal0">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>20</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>0</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QGraphicsView" name="m_gvliteYellow">
+                       <property name="backgroundBrush">
+                        <brush brushstyle="Dense3Pattern">
+                         <color alpha="125">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>0</blue>
+                         </color>
+                        </brush>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QFrame" name="frame_14">
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Plain</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_27">
+                        <item>
+                         <widget class="QRadioButton" name="m_rbYellow1">
+                          <property name="text">
+                           <string>GrayScale</string>
+                          </property>
+                          <property name="checked">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="m_rbYellow2">
+                          <property name="text">
+                           <string>Yellow</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QGroupBox" name="m_gbBlack">
+                    <property name="title">
+                     <string>Black</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_23">
+                     <item row="0" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_20">
+                       <item>
+                        <widget class="QCheckBox" name="m_cbBlackIndex">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="checked">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_19">
+                         <item>
+                          <widget class="QLabel" name="m_ledFlu4">
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="pixmap">
+                            <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_7">
+                           <property name="text">
+                            <string>F</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_5">
+                         <item>
+                          <widget class="QLabel" name="m_ledHBlack">
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="pixmap">
+                            <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_8">
+                           <property name="text">
+                            <string>C</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="m_pbPaintBlack">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>25</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                           <normaloff>:/res/images/Paint.png</normaloff>:/res/images/Paint.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="m_pbImageBlack">
+                         <property name="maximumSize">
+                          <size>
+                           <width>25</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                           <normaloff>:/res/images/kview.png</normaloff>:/res/images/kview.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_4">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="frame_4">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_9">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="spacing">
+                           <number>0</number>
+                          </property>
+                          <item row="0" column="0">
+                           <layout class="QHBoxLayout" name="horizontalLayout_8">
+                            <property name="spacing">
+                             <number>0</number>
+                            </property>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlackPal7">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>7</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlackPal6">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>6</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlackPal5">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>5</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlackPal4">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>4</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlackPal3">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>3</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlackPal2">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>2</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlackPal1">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>1</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlackPal0">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>0</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QGraphicsView" name="m_gvliteBlack">
+                       <property name="backgroundBrush">
+                        <brush brushstyle="Dense3Pattern">
+                         <color alpha="125">
+                          <red>0</red>
+                          <green>0</green>
+                          <blue>0</blue>
+                         </color>
+                        </brush>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QFrame" name="frame_15">
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Plain</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_28">
+                        <item>
+                         <widget class="QRadioButton" name="m_rbBlack1">
+                          <property name="text">
+                           <string>GrayScale</string>
+                          </property>
+                          <property name="checked">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="m_rbBlack2">
+                          <property name="text">
+                           <string>Black</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QGroupBox" name="m_gbBlack2">
+                    <property name="title">
+                     <string>Black-2</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_24">
+                     <item row="0" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_22">
+                       <item>
+                        <widget class="QCheckBox" name="m_cbBlackIndex2">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="checked">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_12">
+                         <item>
+                          <widget class="QLabel" name="m_ledFlu5">
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="pixmap">
+                            <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_9">
+                           <property name="text">
+                            <string>F</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_21">
+                         <item>
+                          <widget class="QLabel" name="m_ledHBlack2">
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="pixmap">
+                            <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_10">
+                           <property name="text">
+                            <string>C</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="m_pbPaintBlack2">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>25</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                           <normaloff>:/res/images/Paint.png</normaloff>:/res/images/Paint.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="m_pbImageBlack2">
+                         <property name="maximumSize">
+                          <size>
+                           <width>25</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                           <normaloff>:/res/images/kview.png</normaloff>:/res/images/kview.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_5">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="frame_8">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_19">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="spacing">
+                           <number>0</number>
+                          </property>
+                          <item row="0" column="0">
+                           <layout class="QHBoxLayout" name="horizontalLayout_13">
+                            <property name="spacing">
+                             <number>0</number>
+                            </property>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlack2Pal7">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>7</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlack2Pal6">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>6</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlack2Pal5">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>5</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlack2Pal4">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>4</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlack2Pal3">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>3</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlack2Pal2">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>2</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlack2Pal1">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>1</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leBlack2Pal0">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>0</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QGraphicsView" name="m_gvliteBlack2">
+                       <property name="backgroundBrush">
+                        <brush brushstyle="Dense3Pattern">
+                         <color alpha="125">
+                          <red>0</red>
+                          <green>0</green>
+                          <blue>0</blue>
+                         </color>
+                        </brush>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QFrame" name="frame_16">
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Plain</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_29">
+                        <item>
+                         <widget class="QRadioButton" name="m_rbBlack21">
+                          <property name="text">
+                           <string>GrayScale</string>
+                          </property>
+                          <property name="checked">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="m_rbBlack22">
+                          <property name="text">
+                           <string>Black</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="5">
+                   <widget class="QGroupBox" name="m_gbWhite">
+                    <property name="title">
+                     <string>White</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_26">
+                     <item row="0" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_24">
+                       <item>
+                        <widget class="QCheckBox" name="m_cbBlancoIndex">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="checked">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_10">
+                         <item>
+                          <widget class="QLabel" name="m_ledFlu6">
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="pixmap">
+                            <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_11">
+                           <property name="text">
+                            <string>F</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_23">
+                         <item>
+                          <widget class="QLabel" name="m_ledHWhite">
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="pixmap">
+                            <pixmap resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_12">
+                           <property name="text">
+                            <string>C</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="m_pbPaintWhite">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>25</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                           <normaloff>:/res/images/Paint.png</normaloff>:/res/images/Paint.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="m_pbImageWhite">
+                         <property name="maximumSize">
+                          <size>
+                           <width>25</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                           <normaloff>:/res/images/kview.png</normaloff>:/res/images/kview.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_6">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="frame_6">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_11">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="spacing">
+                           <number>0</number>
+                          </property>
+                          <item row="0" column="0">
+                           <layout class="QHBoxLayout" name="horizontalLayout_4">
+                            <property name="spacing">
+                             <number>0</number>
+                            </property>
+                            <item>
+                             <widget class="QLineEdit" name="m_leWhitePal7">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>7</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leWhitePal6">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>6</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leWhitePal5">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>5</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leWhitePal4">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>4</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leWhitePal3">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>3</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leWhitePal2">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>2</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leWhitePal1">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>1</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="m_leWhitePal0">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>0</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QGraphicsView" name="m_gvliteWhite">
+                       <property name="backgroundBrush">
+                        <brush brushstyle="Dense3Pattern">
+                         <color alpha="125">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QFrame" name="frame_17">
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Plain</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_30">
+                        <item>
+                         <widget class="QRadioButton" name="m_rbWhite1">
+                          <property name="text">
+                           <string>GrayScale</string>
+                          </property>
+                          <property name="checked">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="m_rbWhite2">
+                          <property name="text">
+                           <string>White</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>Cola Impresión</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_21">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_9">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_20">
+           <item row="1" column="0">
+            <widget class="QFrame" name="frame_10">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_17">
+              <item row="0" column="0">
+               <widget class="QPushButton" name="m_pbColaAdd">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                  <normaloff>:/res/images/plus24.png</normaloff>:/res/images/plus24.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="m_pbColaDel">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                  <normaloff>:/res/images/minus24.png</normaloff>:/res/images/minus24.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="m_pbColaErase">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                  <normaloff>:/res/images/Cancel_32x32.png</normaloff>:/res/images/Cancel_32x32.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="m_pbColaUp">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                  <normaloff>:/res/images/1uparrow.png</normaloff>:/res/images/1uparrow.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QPushButton" name="m_pbColaDown">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../../In2Apps/In2CMYK/In2CMYK/shared.qrc">
+                  <normaloff>:/res/images/1downarrow.png</normaloff>:/res/images/1downarrow.png</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QTableWidget" name="m_twCola">
+             <column>
+              <property name="text">
+               <string>Ficheros</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>C</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>M</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Y</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>K</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Offset(mm)</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QFrame" name="frame_11">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_18">
+           <item row="0" column="0">
+            <widget class="QGraphicsView" name="m_gvPreviewQueue"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1421</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbrir">
+    <property name="title">
+     <string>Fichero</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbrir_fichero_configuraci_n"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_como"/>
+    <addaction name="separator"/>
+    <addaction name="actionCerrar"/>
+   </widget>
+   <widget class="QMenu" name="menuFluidica">
+    <property name="title">
+     <string>Fluidica</string>
+    </property>
+    <addaction name="actionFluidConfig"/>
+   </widget>
+   <widget class="QMenu" name="menuXaar">
+    <property name="title">
+     <string>Xaar</string>
+    </property>
+    <addaction name="actionXUSB_Cabezales"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuGhostScript">
+    <property name="title">
+     <string>Imagen</string>
+    </property>
+    <addaction name="actionConfigurar"/>
+   </widget>
+   <addaction name="menuAbrir"/>
+   <addaction name="menuXaar"/>
+   <addaction name="menuGhostScript"/>
+   <addaction name="menuFluidica"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir imagen</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </action>
+  <action name="actionGuardar_como">
+   <property name="text">
+    <string>Guardar como</string>
+   </property>
+  </action>
+  <action name="actionCerrar">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionFluidConfig">
+   <property name="text">
+    <string>Visualizador</string>
+   </property>
+  </action>
+  <action name="actionXUSB_Cabezales">
+   <property name="text">
+    <string>XUSB y Cabezales</string>
+   </property>
+  </action>
+  <action name="actionOffsets">
+   <property name="text">
+    <string>Encoder y PD</string>
+   </property>
+  </action>
+  <action name="actionSwathe">
+   <property name="text">
+    <string>Offsets</string>
+   </property>
+  </action>
+  <action name="actionDisfusi_n_errores">
+   <property name="text">
+    <string>Swathe</string>
+   </property>
+  </action>
+  <action name="actionDifusi_n_error">
+   <property name="text">
+    <string>Difusión error</string>
+   </property>
+  </action>
+  <action name="actionSpit">
+   <property name="text">
+    <string>Spit</string>
+   </property>
+  </action>
+  <action name="actionMostrarLog">
+   <property name="text">
+    <string>Mostrar</string>
+   </property>
+  </action>
+  <action name="actionGenerador_de_composiciones">
+   <property name="text">
+    <string>Generador de composiciones</string>
+   </property>
+  </action>
+  <action name="actionAbrir_fichero_configuraci_n">
+   <property name="text">
+    <string>Abrir fichero configuración</string>
+   </property>
+  </action>
+  <action name="actionConfigurar">
+   <property name="text">
+    <string>Configurar</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../In2Apps/In2CMYK/In2CMYK/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReportGeneratorUI</class>
+ <widget class="QWidget" name="ReportGeneratorUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTextEdit" name="m_teText">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>531</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_pbOK">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>480</y>
+     <width>75</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Xaar/SinglePassSingleShot/shared.qrc">
+     <normaloff>:/res/images/Ok.png</normaloff>:/res/images/Ok.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Xaar/SinglePassSingleShot/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>

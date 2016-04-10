@@ -1,0 +1,3687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MaquinaAdvUI</class>
+ <widget class="QWidget" name="MaquinaAdvUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>IN2PS</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="m_VariablesMaquina">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>3</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>725</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Variables</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_10">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <widget class="QLabel" name="lbl_TiempoBusquedaMacula">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Tiempo búsqueda mácula [s]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="m_TiempoBusqueda">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarTiempoBusqueda">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QLabel" name="lbl_TensionBobina">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Tensión de bobina [%]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QLineEdit" name="m_TensionBobina">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarTensionBobina">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="lbl_VelocidadBusqueda">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>V. búsqueda mácula [mm/min]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="m_VelocidadBusqueda">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarVelocidadBusqueda">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="lbl_RampaAceleracion">
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Rampa aceleración [cm/min/s]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QLineEdit" name="m_RampaAceleracion">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarRampaAceleracion">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="lbl_VelocidadAjusteMacula">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Velocidad ajuste mácula [mm/min]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLineEdit" name="m_VelocidadAjuste">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarVelocidadAjuste">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QLabel" name="lbl_RampaDeceleracion">
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Rampa deceleración [cm/min/s]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLineEdit" name="m_RampaDeceleracion">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarRampaDeceleracion">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="lbl_VelocidadJogMas">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Velocidad Jog+ [mm/min] </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLineEdit" name="m_VelocidadJogMas">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarVelocidadJogMas">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_13">
+        <item>
+         <widget class="QLabel" name="lbl_DistanciaEmpalme">
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Distancia Empalme [mm]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QLineEdit" name="m_DistanciaEmpalme">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarDistanciaEmpalme">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QLabel" name="lbl_VelocidadJogMenos">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Velocidad Jog- [mm/min]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLineEdit" name="m_VelocidadJogMenos">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarVelocidadJogMenos">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QLabel" name="lbl_FuerzaFreno">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>2</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Fuerza freno [%]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLineEdit" name="m_FuerzaFreno">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarFuerzaFreno">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QLabel" name="lbl_IntensidadLampara">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Intensidad Lámpara  [%]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QLineEdit" name="m_IntensidadLampara">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CambiarIntensidadLampara">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QLabel" name="lbl_TemperaturaLampara">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>2</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Temperatura Lámpara [ºC]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLineEdit" name="m_TemperaturaLampara">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>3</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cambiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="6" column="0">
+       <widget class="QCheckBox" name="m_LampOnJogMas">
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Jog+ con lámpara</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QCheckBox" name="m_LampOnJogMenos">
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Jog- con lámpara</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1" rowspan="3">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QFrame" name="frame_4">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_14">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>Bobinador</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="m_leBobinador">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_15">
+          <item>
+           <widget class="QLabel" name="m_ledBob1">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>Qb_habFalBobinadorInternaDES1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_2">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>Qb_habFalBobinadorInternaDES2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_17">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_3">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>Qb_habFalBobinadorInternaDES3</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_18">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_4">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>Qb_habFalBobinadorInternaImpulsos</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_19">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_5">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>Qb_habFalBobinadorInternaCortoInducidoFreno</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_20">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_6">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>Qb_habFalBobinadorInternaPARO2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_21">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_7">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string>Qb_habFalBobinadorInternaPARO1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_25">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_8">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>Qb_habFalBobinadorBypassActiva</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_22">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_9">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>Qb_habFalBobinadorAccionamientoInactivo</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_23">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_10">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_19">
+            <property name="text">
+             <string>Qb_habFalBobinadorDesmagnetizacionNoTerminada</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_24">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_11">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>Qb_habFalBobinadorFaltaFrenoAbierto</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_26">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_12">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_21">
+            <property name="text">
+             <string>Qb_habFalBobinadorRefrigeracionNoListo</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_27">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_13">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_22">
+            <property name="text">
+             <string>Qb_habFalBobinadorDES1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_28">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_14">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_23">
+            <property name="text">
+             <string>Qb_habFalBobinadorDES2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_29">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_15">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>Qb_habFalBobinadorDES3</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_30">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_16">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>Qb_habFalBobinadorServicio</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_31">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_17">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>Qb_habFalBobinadorCortoInducidoFreno</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_32">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_18">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>Qb_habFalBobinadorPARO2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_33">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_19">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_29">
+            <property name="text">
+             <string>Qb_habFalBobinadorPARO1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_34">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_20">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_30">
+            <property name="text">
+             <string>Qb_habFalBobinadorSTO</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_35">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_21">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_31">
+            <property name="text">
+             <string>Qb_habFalBobinadorPowerON</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_36">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_22">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_32">
+            <property name="text">
+             <string>Qb_habFalBobinadorRampa</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_37">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_23">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_33">
+            <property name="text">
+             <string>Qb_habFalBobinadorArranqueRampa</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_38">
+          <item>
+           <widget class="QLabel" name="m_ledBob1_24">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_34">
+            <property name="text">
+             <string>Qb_habFalBobinadorConsigna</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QFrame" name="frame_3">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_23">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_39">
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_35">
+            <property name="text">
+             <string>DesBobinador</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="m_leDesbobinador">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_40">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_36">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorInternaDES1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_41">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_2">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_37">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorInternaDES2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_42">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_3">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_38">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorInternaDES3</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_43">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_4">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_39">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorInternaImpulsos</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_44">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_5">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_40">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorInternaCortoInducidoFreno</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_45">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_6">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_41">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorInternaPARO2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_46">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_7">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_42">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorInternaPARO1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_47">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_8">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_43">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorBypassActiva</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_48">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_9">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_44">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorAccionamientoInactivo</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_49">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_10">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_45">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorDesmagnetizacionNoTerminada</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_50">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_11">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_46">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorFaltaFrenoAbierto</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_51">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_12">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_47">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorRefrigeracionNoListo</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_52">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_13">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_48">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorDES1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_53">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_14">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_49">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorDES2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_54">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_15">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_50">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorDES3</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_55">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_16">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_51">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorServicio</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_56">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_17">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_52">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorCortoInducidoFreno</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_57">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_18">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_53">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorPARO2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_58">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_19">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_54">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorPARO1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_59">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_20">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_55">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorSTO</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_60">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_21">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_56">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorPowerON</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_61">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_22">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_57">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorRampa</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_62">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_23">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_58">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorArranqueRampa</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_63">
+          <item>
+           <widget class="QLabel" name="m_ledDesb1_24">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_59">
+            <property name="text">
+             <string>Qb_habFalDesbobinadorConsigna</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QGroupBox" name="m_ComandosMaquina">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>2</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>Comandos</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="m_TrabajoNuevo">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Trabajo
+nuevo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="m_JogMas">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Jog +</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="m_JogMenos">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Jog -</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="m_BuscarMacula">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Buscar
+mácula</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QPushButton" name="m_Empalme">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Empalme
+intermedio</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QPushButton" name="m_ReassignXUSB">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Reiniciar
+XUSBs</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <widget class="QPushButton" name="m_ReinicioManual">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Reinicio
+manual</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="8">
+         <widget class="QPushButton" name="m_pbInfo">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+            <normaloff>:/res/images/in2ps_128x128.bmp</normaloff>:/res/images/in2ps_128x128.bmp</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="m_BobinaNueva">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Bobina
+nueva</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="m_FrenoOn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Freno On</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="m_FrenoOff">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Freno Off</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="m_LampOn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Lamp On</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QPushButton" name="m_LampOff">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Lamp Off</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QPushButton" name="curvas">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Tablas</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="8">
+         <widget class="QPushButton" name="m_AceptarButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+            <normaloff>:/res/images/Ok.png</normaloff>:/res/images/Ok.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QPushButton" name="m_pbLog">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Log</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>1</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Diametro</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Sensor Raw-filtered (IN)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_64">
+          <item>
+           <widget class="QLineEdit" name="m_leSensorRaw">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="m_leSensorFilt">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_16">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>PLC Raw-filtered</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_65">
+          <item>
+           <widget class="QLineEdit" name="m_lePLCDiamRaw">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="m_lePLCDiamFilt">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_15">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Sensor Raw-filtered (OUT)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_66">
+          <item>
+           <widget class="QLineEdit" name="m_leSensorRaw2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="m_leSensorFilt2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QLabel" name="m_ledSensorIN">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledverde.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Sensor IN-&gt;PLC</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="m_ledSensorOut">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">:/res/images/Ledverde.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_60">
+          <property name="text">
+           <string>Sensor OUT-&gt;PLC</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QFrame" name="frame_2">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_19">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>XUSB1 detected</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="m_leXUSB1Detected">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_21">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>XUSB1 expected</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="m_leXUSB1Expected">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_20">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>XUSB2 detected</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="m_leXUSB2Detected">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_22">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>XUSB2 expected</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="m_leXUSB2Expected">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QPushButton" name="m_pbReinitSystem">
+          <property name="text">
+           <string>Reordenar</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="m_prbReinitSystem">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QCheckBox" name="m_updateData">
+        <property name="text">
+         <string>Update Data</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../In2Apps/In2SinglePass/SinglePass/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>

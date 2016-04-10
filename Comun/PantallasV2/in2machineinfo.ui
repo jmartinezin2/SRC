@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>In2MachineInfo</class>
+ <widget class="QWidget" name="In2MachineInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>783</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowOpacity">
+   <double>0.500000000000000</double>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="text">
+      <string>GIT VERSION: V_PHARMA_2015_04_16</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

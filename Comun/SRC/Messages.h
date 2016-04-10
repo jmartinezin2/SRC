@@ -1,0 +1,102 @@
+﻿/** @addtogroup Messages
+ *  @{*/
+/** @file Messages.h
+ *
+ *    PROYECTO. Interfaz Inkjet ''
+ *
+ *    (C) Copyright In2 Printing Solutions. Línea Tecnológica: Diseño Electrónico
+ *
+ *    @brief Protocolos de mensajes
+ *
+ *    @li Autores: Jose Mª Martinez
+ *    @li Fichero: Messages.h
+ *    @li Versión: x.0
+ *    @li Fecha: 17/07/08
+ *    @li Lenguaje: C++
+ *
+ *  Revisiones:
+ *
+ */
+
+
+
+/*PROTOCOLO DE COMUNICACION CON AMPLIFICADOR DE PULSOS*/
+#define	AP_RESET				0
+#define AP_ENABLE_EMISION		(AP_RESET+1)
+#define AP_ENABLE_ALIMENTACION	(AP_RESET+2)
+#define AP_PROG_VS1				(AP_RESET+3)
+#define AP_PROG_VS2				(AP_RESET+4)
+#define AP_PROG_VS3				(AP_RESET+5)
+#define AP_PROG_VS4				(AP_RESET+6)
+#define AP_PROG_RT				(AP_RESET+7)
+#define AP_PROG_FT				(AP_RESET+8)
+#define AP_PROG_VS1_OFF			(AP_RESET+9)
+#define AP_PROG_VS2_OFF			(AP_RESET+10)
+#define AP_PROG_VS3_OFF			(AP_RESET+11)
+#define AP_PROG_VS4_OFF			(AP_RESET+12)
+#define AP_PROG_VS5_OFF			(AP_RESET+13)
+#define AP_PROG_VS6_OFF			(AP_RESET+14)
+#define AP_PROG_VS7_OFF			(AP_RESET+15)
+#define AP_PROG_VS8_OFF			(AP_RESET+16)
+#define AP_PROG_VS9_OFF			(AP_RESET+17)
+#define AP_PROG_VS10_OFF		(AP_RESET+18)
+#define AP_PROG_VS11_OFF		(AP_RESET+19)
+#define AP_PROG_VS12_OFF		(AP_RESET+20)
+/* PROTOCOLO COMUNICACION CON MICROPROCESADOR*/
+#define MICRO_TEMP1				160
+#define MICRO_TEMP2				161
+#define MICRO_TEMP3				162
+#define MICRO_TEMP4				163
+#define MICRO_NIVEL				101
+#define MICRO_ACT_PURGA_1		102
+#define MICRO_DESACT_PURGA_1	103
+#define MICRO_ACT_PURGA_2		104
+#define MICRO_DESACT_PURGA_2	105
+#define MICRO_ACT_PURGA_3		106
+#define MICRO_DESACT_PURGA_3	107
+#define MICRO_ACT_PURGA_4		108
+#define MICRO_DESACT_PURGA_4	109
+#define MICRO_DESACT_HEATERS	110
+#define MICRO_DESACT_PUMPS		111
+#define MICRO_NIVEL1			121
+#define MICRO_NIVEL2			122
+#define MICRO_NIVEL3			123
+#define MICRO_NIVEL4			124
+#define MICRO_MODOLIMPIEZA_ON	134
+#define MICRO_MODOLIMPIEZA_OFF	135
+#define MICRO_CIRCUITO_TINTA	136
+#define MICRO_IMAGENENVIADA		137
+#define MICRO_ACT_AIRE_MPC		138
+#define MICRO_DESACT_AIRE_MPC	139
+#define MICRO_CABEZALES_POS_LIMPIEZA	140
+#define MICRO_CABEZALES_POS_TRABAJO		141
+#define MICRO_LIMPIAR_CABEZALES			142
+#define MICRO_ACT_PURGA_LARGA_1			143
+#define MICRO_ACT_PURGA_CORTA_1			144
+#define MICRO_ACT_PURGA_LARGA_2			145
+#define MICRO_ACT_PURGA_CORTA_2			146
+#define MICRO_ACT_PURGA_LARGA_3			147
+#define MICRO_ACT_PURGA_CORTA_3			148
+#define MICRO_ACT_PURGA_LARGA_4			149
+#define MICRO_ACT_PURGA_CORTA_4			150
+#define MICRO_MODOCOMANDO_ON			151
+#define MICRO_MODOCOMANDO_OFF			152
+#define MICRO_RESET						153
+
+#define MICRO_INF_REQUEST		199
+
+
+/* PROTOCOLO COMUNICACION CON CAMARA*/
+#define DATA_CAM				200
+
+//Indices para comandos enviados
+#define INDICE_MICRO_TEMP1			0
+#define INDICE_MICRO_TEMP2			1
+#define INDICE_MICRO_TEMP3			2
+#define INDICE_MICRO_TEMP4			3
+#define INDICE_MICRO_NIVEL1			4
+#define INDICE_MICRO_NIVEL2			5
+#define INDICE_MICRO_NIVEL3			6
+#define INDICE_MICRO_NIVEL4			7
+#define INDICE_MICRO_DESACT_HEATERS	8
+#define INDICE_MICRO_DESACT_PUMPS	9

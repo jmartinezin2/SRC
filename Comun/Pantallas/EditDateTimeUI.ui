@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditDateTimeUI</class>
+ <widget class="QWidget" name="EditDateTimeUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>576</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>IN2PS</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+    <normaloff>:/res/images/in2ps_tr.png</normaloff>:/res/images/in2ps_tr.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="8" column="0">
+    <layout class="QGridLayout" name="gridLayout_6" columnstretch="0,0,0,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="m_Aceptar">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>125</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Aceptar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+         <normaloff>:/res/images/Ok_32x32.png</normaloff>:/res/images/Ok_32x32.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="m_Cancelar">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>125</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+         <normaloff>:/res/images/Cancel_32x32.png</normaloff>:/res/images/Cancel_32x32.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="m_VistaPrevia">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>125</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Aplicar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+         <normaloff>:/res/images/reload.png</normaloff>:/res/images/reload.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="m_gbCentral">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>500</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>500</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Configuración Fecha/Hora</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetFixedSize</enum>
+        </property>
+        <property name="verticalSpacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QTextEdit" name="m_formato">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lbl_formato">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>--</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <widget class="QTabWidget" name="tabWidget_2">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Formatos fecha</string>
+         </attribute>
+         <widget class="QTextEdit" name="m_HelpFecha">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>341</width>
+            <height>351</height>
+           </rect>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:33px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot; bgcolor=&quot;#f6f6f6&quot;&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;d&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;the day as number without a leading zero (1 to 31)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;dd&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;the day as number with a leading zero (01 to 31)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;ddd&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;the abbreviated localized day name (e.g. 'Mon' to 'Sun')&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;dddd&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;the long localized day name (e.g. 'Monday' to 'Sunday'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;M&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;the month as number without a leading zero (1-12)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;MM&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;the month as number with a leading zero (01-12)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;MMM&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;the abbreviated localized month name (e.g. 'Jan' to 'Dec')&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;MMMM&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;the long localized month name (e.g. 'January' to 'December')&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;yy&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;the year as two digit number (00-99)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;yyyy&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;the year as four digit number&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Formatos hora</string>
+         </attribute>
+         <widget class="QTextEdit" name="m_HelpHora">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>341</width>
+            <height>351</height>
+           </rect>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:33px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot; bgcolor=&quot;#f6f6f6&quot;&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;h&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;the hour without a leading zero (0 to 23 or 1 to 12 if AM/PM display)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;hh&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;the hour with a leading zero (00 to 23 or 01 to 12 if AM/PM display)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;m&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;the minute without a leading zero (0 to 59)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;mm&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;the minute with a leading zero (00 to 59)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;s&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;the second without a leading zero (0 to 59)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;ss&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;the second with a leading zero (00 to 59)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;z&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;the milliseconds without leading zeroes (0 to 999)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;zzz&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;the milliseconds with leading zeroes (000 to 999)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;AP&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f6f6&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000; background-color:#f6f6f6;&quot;&gt;use AM/PM display.&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; font-style:italic; color:#000000;&quot;&gt;AP&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#000000;&quot;&gt; will be replaced by either &amp;quot;AM&amp;quot; or &amp;quot;PM&amp;quot;.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;ap&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; vertical-align:top; padding-left:13; padding-right:20; padding-top:3; padding-bottom:3;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020; background-color:#ffffff;&quot;&gt;use am/pm display.&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; font-style:italic; color:#202020;&quot;&gt;ap&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:medium; font-weight:400; color:#202020;&quot;&gt; will be replaced by either &amp;quot;am&amp;quot; or &amp;quot;pm&amp;quot;.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../In2Apps/In2Designer/In2Designer/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>

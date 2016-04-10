@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>helpUI</class>
+ <widget class="QWidget" name="helpUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>530</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>IN2PS Help</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBoxCentral">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>12</horstretch>
+       <verstretch>20</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>IN2 Printing Solutions</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_10">
+      <item row="0" column="0" rowspan="2">
+       <widget class="QTabWidget" name="tabControl">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Help</string>
+         </attribute>
+         <widget class="QWidget" name="gridLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>181</width>
+            <height>302</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/In2HR.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>
+In2 Printing Solutions
+www.in2ps.com
+
+T +34 848 420800
+M +34 675014345
+F + 34 948 317 754
+
+info@in2ps.com</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tabLog">
+         <attribute name="title">
+          <string>Index</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="m_Left">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../../Xaar/SinglePass/shared.qrc">
+                <normaloff>:/res/images/1leftarrow.png</normaloff>:/res/images/1leftarrow.png</iconset>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="m_Right">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../../Xaar/SinglePass/shared.qrc">
+                <normaloff>:/res/images/1rightarrow.png</normaloff>:/res/images/1rightarrow.png</iconset>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QListWidget" name="m_Index"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="m_viewItem">
+              <property name="text">
+               <string>Ver</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Search</string>
+         </attribute>
+         <widget class="QWidget" name="gridLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>171</width>
+            <height>441</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item row="5" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QPushButton" name="m_Left_Results">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../Xaar/SinglePass/shared.qrc">
+                 <normaloff>:/res/images/1leftarrow.png</normaloff>:/res/images/1leftarrow.png</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="m_Right_Results">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../Xaar/SinglePass/shared.qrc">
+                 <normaloff>:/res/images/1rightarrow.png</normaloff>:/res/images/1rightarrow.png</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="m_Search">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>500</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Buscar</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QListWidget" name="m_Results"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="m_viewResults">
+             <property name="text">
+              <string>Ver</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QTextEdit" name="m_TagToSearch">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>500</width>
+               <height>30</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QWebView" name="m_Contents">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="url">
+         <url>
+          <string>about:blank</string>
+         </url>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../Xaar/SinglePass/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>

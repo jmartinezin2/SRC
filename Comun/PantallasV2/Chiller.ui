@@ -1,0 +1,3885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChillerUI</class>
+ <widget class="QWidget" name="ChillerUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="1" column="0">
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_41">
+      <item>
+       <spacer name="horizontalSpacer_10">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Temperatura</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="m_leTemperatura">
+          <property name="maximumSize">
+           <size>
+            <width>100000</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_38">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_38">
+            <property name="text">
+             <string>Temperatura (set)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="m_leSetTemperatura">
+            <property name="maximumSize">
+             <size>
+              <width>100000</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_39">
+          <property name="text">
+           <string>Presion</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="m_lePresion">
+          <property name="maximumSize">
+           <size>
+            <width>100000</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>60</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_37">
+        <item>
+         <widget class="QPushButton" name="m_pbStart">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>START</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="m_pbStop">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>STOP</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="m_pbOK">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>EXIT</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0" rowspan="2">
+       <widget class="QFrame" name="frame_3">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_39">
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_40">
+               <property name="text">
+                <string>ALARMA 1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="m_leAlarm1">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="m_lblLed1">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledverde.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0001-Low Level in Tank</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0002-High Circulating fluid Discharge Temp</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_3">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0004-Circulating fluid discharge temp. rise</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_4">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0008-Circulating fluid discharge temp</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_5">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0010-High circulating fluid return temp</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_6">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0020-High circulating fluid discharge pressure</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_7">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0040-Abnormal pump operation</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_8">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0080-Circulating fluid discharge pressure rise</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_9">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0100-Circulating fluid discharge pressure drop</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_10">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0200-High compressor intake temp</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_11">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0400-Low compressor intake temp</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_12">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0800-Low super heat temperature</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_13">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x1000-High compressor discharge pressure</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_14">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_14">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_15">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x2000-Unused</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_15">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_15">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_16">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x4000-Refrigerant circuit pressure (high pressure side) drop</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_16">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_16">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_17">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x8000-Refrigerant circuit pressure (low pressure side) rise</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QFrame" name="frame_4">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_40">
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_41">
+               <property name="text">
+                <string>ALARMA 2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="m_leAlarm2">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_17">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_17">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledverde.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_18">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0001-Refrigerant circuit pressure (low pressure side) drop</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_18">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_18">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_19">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0002-Compressor overload</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_19">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_19">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_20">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0004-Communication error</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_20">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_20">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_21">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0008-Memory error</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_21">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_21">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_22">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0010-DC line fuse cut</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_22">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_22">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_23">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0020-Circulating fluid discharge temp. sensor failure</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_23">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_23">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_24">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0040-Circulating fluid return temp. sensor failure</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_24">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_24">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_25">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0080-Compressor intake temp. sensor failure</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_25">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_25">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_26">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0100-Circulating fluid discharge pressure sensor failure</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_26">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_26">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_27">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0200-Compressor discharge pressure sensor failure</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_27">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_27">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_28">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0400-Compressor intake pressure sensor failure</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_28">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_28">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_29">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0800-Maintenance of pump</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_29">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_29">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_30">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x1000-Maintenance of fan motor</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_30">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_30">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_31">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x2000-Maintenance of compressor</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_31">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_31">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_32">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x4000-Contact input 1 signal detection alarm</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_32">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_32">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_33">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x8000-Contact input 2 signal detection alarm</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QFrame" name="frame_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>2</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_55">
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_56">
+               <property name="text">
+                <string>ALARMA 3</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="m_leAlarm3">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_33">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_33">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_34">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0001-Water leakage</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_34">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_34">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_35">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0002-DI Level rise</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_35">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_35">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_36">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0004-DI level drop</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_36">
+             <item>
+              <widget class="QLabel" name="m_lblLed1_36">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_37">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>5</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0x0008-DI sensor error</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QFrame" name="frame_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>4</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_56">
+             <item>
+              <spacer name="horizontalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_57">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>STATUS</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="m_leStatus">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_57">
+             <item>
+              <widget class="QLabel" name="label_58">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Run Flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus1_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>RUN</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus1_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>STOP</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_58">
+             <item>
+              <widget class="QLabel" name="label_61">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Operation stop alarm flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus2_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Given off</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus2_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Not ocurred</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_59">
+             <item>
+              <widget class="QLabel" name="label_64">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Operation continued alarm flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus3_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Given off</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus3_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Not ocurred</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_60">
+             <item>
+              <widget class="QLabel" name="label_67">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Press unit flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus4_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>PSI</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus4_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>MPa</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_61">
+             <item>
+              <widget class="QLabel" name="label_70">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Remote status flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus5_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Serial</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus5_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Not Serial</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_62">
+             <item>
+              <widget class="QLabel" name="label_75">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Temp ready flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus6_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>OK</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus6_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>NOK</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_63">
+             <item>
+              <widget class="QLabel" name="label_78">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Temperature unit flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus7_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>ºF</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus7_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>ºC</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_64">
+             <item>
+              <widget class="QLabel" name="label_83">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Run timer flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus8_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Set</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus8_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Not Set</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_65">
+             <item>
+              <widget class="QLabel" name="label_86">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Stop timer flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus9_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Set</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus9_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Not Set</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_66">
+             <item>
+              <widget class="QLabel" name="label_89">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Reset after power failure flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus10_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Set</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus10_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Not Set</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_67">
+             <item>
+              <widget class="QLabel" name="label_94">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Anti-freezing flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus11_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Set</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus11_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Not Set</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_68">
+             <item>
+              <widget class="QLabel" name="label_97">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Automatic fluid filling flag</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus12_1">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Fluid</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_lbStatus12_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="palette">
+                <palette>
+                 <active>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </active>
+                 <inactive>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>0</red>
+                     <green>0</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </inactive>
+                 <disabled>
+                  <colorrole role="WindowText">
+                   <brush brushstyle="SolidPattern">
+                    <color alpha="255">
+                     <red>120</red>
+                     <green>120</green>
+                     <blue>120</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                 </disabled>
+                </palette>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Stop</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_69">
+             <item>
+              <widget class="QLabel" name="label_100">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Reserved</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_101">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_102">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_70">
+             <item>
+              <widget class="QLabel" name="label_103">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Reserved</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_104">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_105">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_71">
+             <item>
+              <widget class="QLabel" name="label_106">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Reserved</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_107">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_108">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_72">
+             <item>
+              <widget class="QLabel" name="label_109">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>3</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Reserved</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_110">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_111">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../Xaar/SinglePass/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>

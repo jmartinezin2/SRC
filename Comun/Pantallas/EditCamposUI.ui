@@ -1,0 +1,1662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditCamposUI</class>
+ <widget class="QWidget" name="EditCamposUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>772</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>IN2PS</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+    <normaloff>:/res/images/in2ps_tr.png</normaloff>:/res/images/in2ps_tr.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QFrame" name="frame_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_13">
+        <item row="0" column="1">
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Item</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_15">
+            <item row="5" column="0">
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0">
+             <widget class="QFrame" name="frame_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>2</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>125</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_12">
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <layout class="QGridLayout" name="gridLayout_11">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_7">
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>x (mm)</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLabel" name="label_12">
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>y (mm)</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLineEdit" name="m_CampoHorizontal">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>0</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="m_CampoVertical">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>0</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <item>
+                    <widget class="QLabel" name="m_labelPos">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="textFormat">
+                      <enum>Qt::RichText</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_16">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="text">
+                      <string>0.1 mm---&gt;</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="1">
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="m_MoveUp">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>1</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+                     <normaloff>:/res/images/1uparrow.png</normaloff>:/res/images/1uparrow.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QPushButton" name="m_MoveLeft">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>1</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+                     <normaloff>:/res/images/1leftarrow.png</normaloff>:/res/images/1leftarrow.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QPushButton" name="m_MoveItem">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>1</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>9</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>P</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="m_MoveRight">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>1</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+                     <normaloff>:/res/images/1rightarrow.png</normaloff>:/res/images/1rightarrow.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QPushButton" name="m_MoveDown">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>1</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+                     <normaloff>:/res/images/1downarrow.png</normaloff>:/res/images/1downarrow.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>1</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>125</height>
+               </size>
+              </property>
+              <property name="title">
+               <string>Fuente</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_24">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Tamaño </string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="label_23">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Estilo</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QLabel" name="label_5">
+                   <property name="text">
+                    <string>Espacio</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLineEdit" name="m_Tamano">
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QComboBox" name="m_Estilo">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>4</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QLineEdit" name="m_leLetterSpace">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QComboBox" name="m_ColorCampo">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTextEdit" name="m_ColorSeleccionado">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>18</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>7</pointsize>
+                    </font>
+                   </property>
+                   <property name="verticalScrollBarPolicy">
+                    <enum>Qt::ScrollBarAlwaysOff</enum>
+                   </property>
+                   <property name="tabChangesFocus">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <item>
+                    <widget class="QLabel" name="label_22">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Font</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFontComboBox" name="m_Fuente">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>18</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>250</width>
+                       <height>18</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>7</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QGroupBox" name="groupBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>2</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>180</height>
+               </size>
+              </property>
+              <property name="title">
+               <string>Matriz</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <layout class="QGridLayout" name="gridLayout">
+                   <item row="0" column="1">
+                    <widget class="QLabel" name="label_3">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Num.</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QLabel" name="label_4">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Frc.</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="3">
+                    <widget class="QLabel" name="label_19">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Delta</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Filas</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="m_FilasMatriz">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="2">
+                    <widget class="QLineEdit" name="m_FrecuenciaFilasMatriz">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="3">
+                    <widget class="QLineEdit" name="m_IncFilas">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_2">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Cols.</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="m_ColumnasMatriz">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="2">
+                    <widget class="QLineEdit" name="m_FrecuenciaColumnasMatriz">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="3">
+                    <widget class="QLineEdit" name="m_IncCols">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line_2">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                   <item>
+                    <widget class="QLabel" name="label_11">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>1</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Angulo</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="m_Orientacion">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>1</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Excepciones (1,2,3...)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="m_ExcepcionesMatriz">
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                    </font>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_21">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>1</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QFrame" name="frame">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>2</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>155</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QCheckBox" name="m_MatrizOnOff">
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Hab.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="m_NumeroCampo">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>1</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="m_NumeroMatriz">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>1</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <widget class="Line" name="line">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout">
+                   <item>
+                    <widget class="QLabel" name="label_9">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Nombre</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="m_NombreCampo">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>2</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="readOnly">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <item>
+                    <widget class="QLabel" name="label_18">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Valor</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="m_ValorCampo">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="3" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <layout class="QGridLayout" name="gridLayout_6">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_17">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Origen</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLineEdit" name="m_OrigenCampo">
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QPushButton" name="m_ConfigOrigen">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>32</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>75</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+                       <normaloff>:/res/images/run.png</normaloff>:/res/images/run.png</iconset>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QGridLayout" name="gridLayout_7">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_13">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Tipo</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QComboBox" name="m_TipoCampo">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QPushButton" name="m_ConfigTipo">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>32</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>75</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+                       <normaloff>:/res/images/run.png</normaloff>:/res/images/run.png</iconset>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="0">
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>2</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>125</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>OPCIONES</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QFrame" name="frame_5">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <item>
+              <widget class="QPushButton" name="m_pbGridMas">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+                 <normaloff>:/res/images/plus24.png</normaloff>:/res/images/plus24.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="m_pbGridMenos">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+                 <normaloff>:/res/images/minus24.png</normaloff>:/res/images/minus24.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="m_gridSize">
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                </font>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="m_showGrid">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Grid</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="m_AceptarButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+              <normaloff>:/res/images/Ok.png</normaloff>:/res/images/Ok.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_CancelButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+              <normaloff>:/res/images/Cancel.png</normaloff>:/res/images/Cancel.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_AceptarValores">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../../In2Apps/In2Designer/In2Designer/shared.qrc">
+              <normaloff>:/res/images/reload.png</normaloff>:/res/images/reload.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGraphicsView" name="m_GraphicsView">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>6</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="backgroundBrush">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>85</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>m_MatrizOnOff</tabstop>
+  <tabstop>m_NumeroCampo</tabstop>
+  <tabstop>m_NumeroMatriz</tabstop>
+  <tabstop>m_NombreCampo</tabstop>
+  <tabstop>m_ValorCampo</tabstop>
+  <tabstop>m_OrigenCampo</tabstop>
+  <tabstop>m_ConfigOrigen</tabstop>
+  <tabstop>m_TipoCampo</tabstop>
+  <tabstop>m_ConfigTipo</tabstop>
+  <tabstop>m_CampoHorizontal</tabstop>
+  <tabstop>m_CampoVertical</tabstop>
+  <tabstop>m_MoveItem</tabstop>
+  <tabstop>m_FilasMatriz</tabstop>
+  <tabstop>m_FrecuenciaFilasMatriz</tabstop>
+  <tabstop>m_IncFilas</tabstop>
+  <tabstop>m_ColumnasMatriz</tabstop>
+  <tabstop>m_FrecuenciaColumnasMatriz</tabstop>
+  <tabstop>m_IncCols</tabstop>
+  <tabstop>m_ExcepcionesMatriz</tabstop>
+  <tabstop>m_Orientacion</tabstop>
+  <tabstop>m_pbGridMas</tabstop>
+  <tabstop>m_pbGridMenos</tabstop>
+  <tabstop>m_showGrid</tabstop>
+  <tabstop>m_AceptarButton</tabstop>
+  <tabstop>m_CancelButton</tabstop>
+  <tabstop>m_AceptarValores</tabstop>
+  <tabstop>m_GraphicsView</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../In2Apps/In2Designer/In2Designer/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>

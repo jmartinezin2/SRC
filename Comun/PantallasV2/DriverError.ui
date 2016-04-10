@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>871</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>30</y>
+     <width>287</width>
+     <height>546</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_26">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Bobinador</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_2"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_27">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_25">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_27">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorInternaDES1</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_28">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_26">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_28">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorInternaDES2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_29">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_27">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_29">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorInternaDES3</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_30">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_28">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_30">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorInternaImpulsos</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_31">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_29">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_31">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorInternaCortoInducidoFreno</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_32">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_30">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_32">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorInternaPARO2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_33">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_31">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_33">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorInternaPARO1</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_34">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_32">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_34">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorBypassActiva</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_35">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_33">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_35">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorAccionamientoInactivo</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_36">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_34">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_36">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorDesmagnetizacionNoTerminada</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_37">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_35">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_37">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorFaltaFrenoAbierto</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_38">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_36">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_38">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorRefrigeracionNoListo</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_39">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_37">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_39">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorDES1</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_40">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_38">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_40">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorDES2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_41">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_39">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_41">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorDES3</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_42">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_40">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_42">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorServicio</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_43">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_41">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_43">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorCortoInducidoFreno</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_44">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_42">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_44">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorPARO2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_45">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_43">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_45">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorPARO1</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_46">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_44">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_46">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorSTO</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_47">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_45">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_47">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorPowerON</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_48">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_46">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_48">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorRampa</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_49">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_47">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_49">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorArranqueRampa</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_50">
+      <item>
+       <widget class="QLabel" name="m_ledBob1_48">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../Xaar/SinglePass/shared.qrc">:/res/images/Ledrojo.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_50">
+        <property name="text">
+         <string>Qb_habFalDesbobinadorConsigna</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Xaar/SinglePass/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>

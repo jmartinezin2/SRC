@@ -1,0 +1,1487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PrincipalSPassUI</class>
+ <widget class="QWidget" name="PrincipalSPassUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>In2 Printing Solutions</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>800</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>164</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>STATUS</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="GestionButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Eventos y usuarios</string>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="accessibleDescription">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Gestión</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+          <normaloff>:/res/images/Configuracion.png</normaloff>:/res/images/Configuracion.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="MachineButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Impresión</string>
+        </property>
+        <property name="text">
+         <string>Máquina</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+          <normaloff>:/res/images/run.png</normaloff>:/res/images/run.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Chiller">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Control de fluidica</string>
+        </property>
+        <property name="text">
+         <string>Chiller</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+          <normaloff>:/res/images/snowflake.png</normaloff>:/res/images/snowflake.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="FluidicaButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Control de fluidica</string>
+        </property>
+        <property name="text">
+         <string>Fluídica</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+          <normaloff>:/res/images/ksplash.png</normaloff>:/res/images/ksplash.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="DbComposicionButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Genera y administra composiciones</string>
+        </property>
+        <property name="text">
+         <string>Composición</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+          <normaloff>:/res/images/ksirtet.png</normaloff>:/res/images/ksirtet.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="m_pbLog">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Genera y administra composiciones</string>
+        </property>
+        <property name="text">
+         <string>Log</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+          <normaloff>:/res/images/kghostview.png</normaloff>:/res/images/kghostview.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="m_pbUsuario">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Genera y administra composiciones</string>
+        </property>
+        <property name="text">
+         <string>Usuario</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+          <normaloff>:/res/images/User-Clients-icon.png</normaloff>:/res/images/User-Clients-icon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ExitButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Exit</string>
+        </property>
+        <property name="text">
+         <string>Salir</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+          <normaloff>:/res/images/exit.png</normaloff>:/res/images/exit.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+     <zorder>ExitButton</zorder>
+     <zorder>DbComposicionButton</zorder>
+     <zorder>FluidicaButton</zorder>
+     <zorder>MachineButton</zorder>
+     <zorder>GestionButton</zorder>
+     <zorder>m_pbLog</zorder>
+     <zorder>Chiller</zorder>
+     <zorder>m_pbUsuario</zorder>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QFrame" name="m_centralFrame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="2">
+       <widget class="QFrame" name="m_centralFrame2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>3</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QTableWidget" name="m_twMaquina">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>150</height>
+            </size>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <row>
+            <property name="text">
+             <string>Usuario</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Permisos</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>IP-1</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>IP-2</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Estado</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Valor</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="m_twHistorico">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>150</height>
+            </size>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <row>
+            <property name="text">
+             <string>Lampara ON (hh:mm:ss)</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Metros impresos (m)</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Num. Trabajos</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>D.Entrada</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>D.Salida</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Cambio filtros (yyy-mm-dd)</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Valor</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <item row="3" column="0">
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="m_twChiller">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>1000</height>
+            </size>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <row>
+            <property name="text">
+             <string>STATUS</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Chiller ON</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Enabled</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>AutoStart</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Tª (ºC)</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Tª SetPoint</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>P</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Alarma 1</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Alarma 2</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Alarma 3</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>COM</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Valor</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>NO</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="flags">
+             <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>NO</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="flags">
+             <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>NO</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="flags">
+             <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="flags">
+             <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="flags">
+             <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="7" column="0">
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="flags">
+             <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="8" column="0">
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="flags">
+             <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="9" column="0">
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="flags">
+             <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="10" column="0">
+            <property name="text">
+             <string>NOK</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="flags">
+             <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QFrame" name="frame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>6</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QTableWidget" name="m_twXusb">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>1</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <row>
+              <property name="text">
+               <string>Estado</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>N.Cabezales</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </row>
+             <column>
+              <property name="text">
+               <string>Card1</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Card2</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Card3</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Card4</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <item row="0" column="0">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="0" column="1">
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="0" column="2">
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="0" column="3">
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>120</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="m_twFluidica">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>1</horstretch>
+             <verstretch>5</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>350</height>
+            </size>
+           </property>
+           <row>
+            <property name="text">
+             <string>Color</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Nombre</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Estado</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>P.Menisco</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>P.Diferencial</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Temperatura</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>LED</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>SWITCH</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>FAULT</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Nivel</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>F1</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>F2</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>F3</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>F4</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <item row="2" column="0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="6" column="2">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="6" column="3">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="7" column="0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="7" column="2">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="7" column="3">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="8" column="0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="8" column="1">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="8" column="3">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="9" column="0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="9" column="1">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="9" column="2">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="9" column="3">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>200</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../In2Apps/In2SinglePass/SinglePass/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>

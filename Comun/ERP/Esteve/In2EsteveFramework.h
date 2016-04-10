@@ -1,0 +1,64 @@
+#ifndef IN2ESTEVEFRAMEWORK_H
+#define IN2ESTEVEFRAMEWORK_H
+
+
+#define SGL_WORKLOADED_NOK 0
+#define SGL_WORKLOADED_OK 1
+#define SGL_WORKLOADED_SCAN 2
+#define SGL_WORKLOADED_DOC 3
+#define SGL_WORKLOADED_NODOC 4
+
+enum IN_ELEMENTS{
+    in_MSG_ID,
+    in_TAREA_ID,
+    in_COD_ORDEN,
+    in_COD_BULTO_PADRE,
+    in_COD_PRODUCTO,
+    in_LOTE_LDE,
+    in_FCH_FABRICACION,
+    in_FCH_CADUCIDAD,
+    in_METROS_IMPRIMIR,
+    in_TIPO_TAREA,
+    in_PATH_FICHERO_INI,
+    in_IND_PERMITIR_EMPALME,
+    in_TEXTO_ERROR,
+    in_ESTADO,
+    in_FCH_CREACION,
+    in_FCH_PROCESO,
+    in_IMPRESORA_ID,
+    MAX_IN_ELEMENTS
+};
+
+enum OUT_ELEMENTS{
+    out_MSG_ID,
+    out_TAREA_ID,
+    out_METROS_IMPRESOS,
+    out_METROS_GASTADOS,
+    out_IND_FIN_BULTO_PADRE,
+    out_IND_FIN_BULTO_HIJO,
+    out_IND_RECHAZO,
+    out_IND_FORMATO_PERSONALIZADO,
+    out_TEXTO_OBSERVACIONES ,
+    out_ESTADO,
+    out_FCH_CREACION,
+    out_FCH_PROCESO,
+    out_IMPRESORA_ID,
+    MAX_OUT_ELEMENTS
+};
+
+#define SGL_STATE_PND "PND"
+#define SGL_STATE_FIN "FIN"
+#define SGL_STATE_ERROR  "ERR"
+
+#define SGL_NO "N"
+#define SGL_SI "S"
+#define SGL_ZERO "0"
+#define SGL_ONE "1"
+
+
+//Tipos de tarea
+#define SGL_TAREA_IMPRIMIR  "Imprimir"
+#define SGL_TAREA_DOCUMENTAR "Documentar"
+
+
+#endif // IN2ESTEVEFRAMEWORK_H

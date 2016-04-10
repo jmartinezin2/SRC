@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MaquinaCMYK</class>
+ <widget class="QMainWindow" name="MaquinaCMYK">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Imagen</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="title">
+       <string>Lámparas</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>CMYK</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichero">
+    <property name="title">
+     <string>Fichero</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_como"/>
+    <addaction name="actionCerrar"/>
+   </widget>
+   <addaction name="menuFichero"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </action>
+  <action name="actionGuardar_como">
+   <property name="text">
+    <string>Guardar como</string>
+   </property>
+  </action>
+  <action name="actionCerrar">
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

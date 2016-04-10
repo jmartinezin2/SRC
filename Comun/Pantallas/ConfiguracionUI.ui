@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfiguracionUI</class>
+ <widget class="QWidget" name="ConfiguracionUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>IN2PS</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QPushButton" name="m_UserButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Usuarios, passwords, permisos...</string>
+     </property>
+     <property name="text">
+      <string>Gestion 
+usuarios</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+       <normaloff>:/res/images/User-Clients-icon.png</normaloff>:/res/images/User-Clients-icon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="m_InfoButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Log de eventos y máquina</string>
+     </property>
+     <property name="text">
+      <string>Gestion 
+eventos</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+       <normaloff>:/res/images/logout.png</normaloff>:/res/images/logout.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="m_Mantenimiento">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Limpieza lámpara y filtros</string>
+     </property>
+     <property name="text">
+      <string>Gestion
+mantenimiento</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+       <normaloff>:/res/images/mantenimiento.png</normaloff>:/res/images/mantenimiento.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="m_pbVision">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Log de eventos y máquina</string>
+     </property>
+     <property name="text">
+      <string>Vision</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+       <normaloff>:/res/images/sendimgfija.png</normaloff>:/res/images/sendimgfija.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="m_pbHistorico">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>181</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Histórico</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+       <normaloff>:/res/images/market.png</normaloff>:/res/images/market.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QPushButton" name="m_InkCalculator">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>181</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Calculador de tinta</string>
+     </property>
+     <property name="text">
+      <string>Calculadora
+de tinta</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+       <normaloff>:/res/images/calculator4.png</normaloff>:/res/images/calculator4.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="m_pbPermisos">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Log de eventos y máquina</string>
+     </property>
+     <property name="text">
+      <string>Permisos</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+       <normaloff>:/res/images/lock.png</normaloff>:/res/images/lock.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QPushButton" name="m_PrincipalButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Pantalla Principal</string>
+     </property>
+     <property name="text">
+      <string>Principal</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+       <normaloff>:/res/images/Home.png</normaloff>:/res/images/Home.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="m_pbVersion">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>181</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Version</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../In2Apps/In2SinglePass/SinglePass/shared.qrc">
+       <normaloff>:/res/images/in2ps_tr.png</normaloff>:/res/images/in2ps_tr.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../In2Apps/In2SinglePass/SinglePass/shared.qrc"/>
+ </resources>
+ <connections/>
+</ui>
