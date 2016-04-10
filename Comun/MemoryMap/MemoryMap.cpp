@@ -175,7 +175,7 @@ void MemoryMap::Init(){
     m_mapa.m_sai.testSai=false;
     m_mapa.m_sai.tokenFile.clear();
     //memset(&m_mapa.m_variables.VolumenGota,0x00,sizeof(m_mapa.m_variables.VolumenGota));
-
+#ifdef DEPURACION_IN2
     m_mapa.m_variables.defaultImagePath=QApplication::applicationDirPath(); //Por defecto a la ruta de aplicacion
     InitComposicion();
     m_mapa.m_impresion.bEscalaGrises=false;
@@ -247,6 +247,8 @@ void MemoryMap::Init(){
     m_mapa.m_maquina.temperatura_lampara=0;
     m_mapa.m_maquina.ContadorTempLampara=0;
     m_mapa.m_maquina.intensidad_lampara=0;
+#endif
+
 #ifdef BALLUF
     m_mapa.m_maquina.balluf_centrado=false;
 #else

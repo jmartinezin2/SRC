@@ -83,16 +83,9 @@ void In2ImageCreator::sltGenerateImage(){
     time.start();
 
     //Calculo monohilo
-    /*for(j=0;j<ImpresionesPosibles;j++){
-        sltCreaImagenUnitariaColoresPlenos(j);
-    }*/
-
-    //Calculo multihilo
-    QFutureSynchronizer<void> synchronizer;
     for(j=0;j<ImpresionesPosibles;j++){
-        synchronizer.addFuture(QtConcurrent::run(this,&In2ImageCreator::sltCreaImagenUnitariaColoresPlenos,j));
+        sltCreaImagenUnitariaColoresPlenos(j);
     }
-    synchronizer.waitForFinished();
 
 
 
@@ -155,7 +148,7 @@ QImage In2ImageCreator::ditherImage(QImage & generatedImage,struct m_Colores & c
     QVector<QRgb> m_table256;
     m_table256.resize(256);
     for (int x=0;x<256;x++){
-        m_table256[x]=qRgb(0,0,0);
+        m_table256[x]=qRgb(x,x,x);
     }
 
     In2FloydSteinberg fs;
@@ -969,13 +962,8 @@ void In2ImageCreator::sltCreaImagenEnviarColoresPlenos(){
 
             generatedImage->save(nombreruta_bmp,"BMP");
 
-
-            delete (generatedImage);
         }
         else{
-            QMessageBox::warning(0,"ERROR",tr("La memoria se ha corrompido. Rehaga el diseño por favor"),QMessageBox::Ok);
-            m_memoryMap->m_Imagen=QPixmap();
-            return;
         }
     }
 

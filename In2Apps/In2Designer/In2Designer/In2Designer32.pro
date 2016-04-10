@@ -7,7 +7,7 @@
 DEFINES+=TARGET_64
 TARGET = In2Designer
 
-LIBS+= -L../../../Comun/barcode/libs/x64 \
+LIBS+= -L../../../Comun/barcode/libs \
        -lzint
 
 
@@ -250,14 +250,15 @@ FORMS    += mainwindow.ui \
     ../../../Comun/PantallasV2/In2EditCamposUI.ui \
     ../../../Comun/Pantallas/EditCamposUI.ui \
     ../../../Comun/PantallasV2/in2colaimpresion.ui \
-    ../../../Comun/PantallasV2/In2ColaImpresionMono.ui \
     ../../../Comun/PantallasV2/in2aisvisionselection.ui \
     ../../../Comun/PantallasV2/in2machineinfo.ui \
-    ../../../Comun/PantallasV2/In2SGLClose.ui \
-    ../../../Comun/Pantallas/compileversion.ui
+    ../../../Comun/Pantallas/compileversion.ui \
+    ../../../Comun/PantallasV2/Esteve/In2ColaImpresionMono.ui \
+    ../../../Comun/PantallasV2/Esteve/In2SGLClose.ui
 
 RESOURCES += \
-    shared.qrc
+    shared.qrc \
+    ../../../Comun/In2Apps/In2SinglePass/SinglePass/shared.qrc
 
 DISTFILES += \
     Recursos.rc

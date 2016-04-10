@@ -362,6 +362,7 @@ void In2GestorMaquina::sltEnableMonitorPrint(bool val){
     if (m_memoryMap->m_mapa.m_impresion.bMonitorHead){
         GestorImpresion *gestorImpresion=GestorImpresion::request(0);
         gestorImpresion->sltMonitorHeads(val);
+
     }
 }
 /** Inicia el monitor delayed*/
@@ -640,10 +641,9 @@ void In2GestorMaquina::sltFinalizarImpresion(int mode){
     emit sgnFinImpresion(mode);
     emit sgnIn2GestorMaquinaMessage(txt);
     emit SendDebugInfo(LOGGER_ERROR,txt);
-
+    GestorImpresion *p=GestorImpresion::request(this);
     if (isEmergency){
-        ChangeStyle(THEME_EMERGENCY);
-        GestorImpresion *p=GestorImpresion::request(this);
+        ChangeStyle(THEME_EMERGENCY);        
         p->FullDisablePrintMode();
         m_gestorMaquina->sltEnableCondicionesMovimiento();
         emit sgnChangeState(THEME_EMERGENCY);
@@ -701,6 +701,7 @@ void In2GestorMaquina::sltFinalizarImpresion(int mode){
             QTimer::singleShot(0,report,SLOT(sltGenerateReport()));
         }
     }
+    p->deleteLater();
     //Devilvemos el esatdo original del filtro de maculas
     m_memoryMap->m_mapa.m_impresion.m_fltrMacula.bMonitorMacula=m_memoryMap->m_mapa.m_machinedefaults.filtroMaculas;
 
@@ -719,6 +720,7 @@ void In2GestorMaquina::_sltMonitorMetrosImpresos(){
     if (m_memoryMap->m_mapa.m_maquina.metros_trabajo>=m_memoryMap->m_mapa.m_maquina.ref_metros_trabajo){
         sltFinalizarImpresion(FIN_METROS);
     }
+
 
 }
 /** Testea diametro entrada*/

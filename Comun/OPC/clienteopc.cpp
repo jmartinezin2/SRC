@@ -182,14 +182,13 @@ void ClienteOPC::InicializarItemsExt1(){
     /*int wait=DELAY_OPC;
     int rtn=0;
     QString dummyString;*/
-    
+    setNewItem(&OPC_Bobinadora_Ext1->TrabajoNuevo,ID_TRABAJO_NUEVO_EXT,STRING_ITEM_TRABAJO_NUEVO);
+    setNewItem(&OPC_Bobinadora_Ext1->CondicionesMovimiento,ID_CONDICIONES_MOVIMIENTO_EXT,STRING_ITEM_CONDICIONES_MOVIMIENTO);
     setNewItem(&OPC_Bobinadora_Ext1->VelocidadActual,ID_VELOCIDAD_ACT_EXT,STRING_ITEM_VELOCIDAD_ACT);
     setNewItem(&OPC_Bobinadora_Ext1->VelocidadRef,ID_VELOCIDAD_REF_EXT,STRING_ITEM_VELOCIDAD_REF);
     setNewItem(&OPC_Bobinadora_Ext1->LongitudActual,ID_METROS_ACT_EXT,STRING_ITEM_METROS_ACT);
     setNewItem(&OPC_Bobinadora_Ext1->LongitudRef,ID_METROS_REF_EXT,STRING_ITEM_METROS_REF);
     setNewItem(&OPC_Bobinadora_Ext1->CondicionesImpresion,ID_CONDICIONES_IMPRESION_EXT,STRING_ITEM_CONDICIONES_IMPRESION);
-    setNewItem(&OPC_Bobinadora_Ext1->TrabajoNuevo,ID_TRABAJO_NUEVO_EXT,STRING_ITEM_TRABAJO_NUEVO);
-    setNewItem(&OPC_Bobinadora_Ext1->CondicionesMovimiento,ID_CONDICIONES_MOVIMIENTO_EXT,STRING_ITEM_CONDICIONES_MOVIMIENTO);
 
     /*QVariant valor=QVariant(1);
     MiServidorOPC->escribeDato(OPC_Bobinadora_Ext1->CondicionesMovimiento.client_handle,valor);*/
@@ -203,10 +202,10 @@ void ClienteOPC::InicializarItemsExt1(){
     setNewItem(&OPC_Bobinadora_Ext1->FijarDiametroEntrada,ID_FIJAR_DIAMETRO_ENTRADA_EXT,STRING_ITEM_FIJAR_DIAMETRO_ENTRADA);
     setNewItem(&OPC_Bobinadora_Ext1->FijarDiametroSalida,ID_FIJAR_DIAMETRO_SALIDA_EXT,STRING_ITEM_FIJAR_DIAMETRO_SALIDA);
     setNewItem(&OPC_Bobinadora_Ext1->ParoMaquina,ID_PARO_MAQUINA_EXT,STRING_ITEM_PARO_MAQUINA);
-    setNewItem(&OPC_Bobinadora_Ext1->MarchaMovimiento,ID_MARCHA_MOVIMIENTO_EXT,STRING_ITEM_MARCHA_MOVIMIENTO);
     setNewItem(&OPC_Bobinadora_Ext1->ParoMovimiento,ID_PARO_MOVIMIENTO_EXT,STRING_ITEM_PARO_MOVIMIENTO);
     setNewItem(&OPC_Bobinadora_Ext1->SecuenciaOn,ID_SECUENCIA_ON_EXT,STRING_ITEM_SECUENCIA_ON);
     setNewItem(&OPC_Bobinadora_Ext1->DetectorMacula,ID_DETECTOR_MACULA_EXT,STRING_ITEM_DETECTOR_MACULA);
+    setNewItem(&OPC_Bobinadora_Ext1->MarchaMovimiento,ID_MARCHA_MOVIMIENTO_EXT,STRING_ITEM_MARCHA_MOVIMIENTO);
     setNewItem(&OPC_Bobinadora_Ext1->JogMas,ID_JOG_MAS_EXT,STRING_ITEM_JOG_MAS);
     setNewItem(&OPC_Bobinadora_Ext1->JogMenos,ID_JOG_MENOS_EXT,STRING_ITEM_JOG_MENOS);
     setNewItem(&OPC_Bobinadora_Ext1->BuscarMacula,ID_BUSCAR_MACULA_EXT,STRING_ITEM_BUSCAR_MACULA);
@@ -284,7 +283,6 @@ void ClienteOPC::InicializarItemsExt1Advanced(){
 
 
     m_bInitiated=true;
-    emit OPCInitiated();
 }
 
 /** Devuelve si esta inicializado*/

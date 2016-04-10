@@ -485,7 +485,7 @@ void Principal::sltHydraError(int error,int equipo, float value){
         //Hay que hacer un shutdown??
         m_FluidGestor=In2GestorFluidica::request(this);
         m_FluidGestor->ShutdownEquipo(equipo);
-
+        QApplication::exit();
         break;
     case HYDRAERROR_SWITCHES_ERROR:
         str=m_FluidGestor->getSwitchesDescription(equipo);
@@ -494,10 +494,11 @@ void Principal::sltHydraError(int error,int equipo, float value){
     case HYDRAERROR_MENISCUS_RANGE:
         emit SendDebugInfo(LOGGER_ERROR,QString("Presion de menisco en (%1-%2) fuera de rango [%3]").arg(equipo).arg(name).arg(value));
         m_InfoDebug->showLog();
+        QApplication::exit();
         break;
     case HYDRAERROR_LOW_LEVEL:
         emit SendDebugInfo(LOGGER_ERROR,QString("Nivel de tinta en (%1-$2) bajo [%3]").arg(equipo).arg(name).arg(value));
-        m_InfoDebug->showLog();
+        m_InfoDebug->showLog();        
         break;
 
     case HYDRAERROR_MENISCUS_POSITIVE:
@@ -507,6 +508,7 @@ void Principal::sltHydraError(int error,int equipo, float value){
         //Hay que hacer un shutdown??
         m_FluidGestor=In2GestorFluidica::request(this);
         m_FluidGestor->ShutdownEquipo(equipo);
+        QApplication::exit();
         break;
     case HYDRAERROR_STATECHANGE_ERROR:
         str=m_FluidGestor->getModeDescription(equipo);

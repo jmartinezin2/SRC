@@ -197,7 +197,6 @@ void InkjetDebug::sltUpdateDB(QString txt){
 #else
         db.exec(select.toAscii().data());
 #endif
-        db.close();
     }
 }
 
@@ -339,7 +338,6 @@ void InkjetDebug::SaveLogToFile(){
             contenido=ui->m_Info->toPlainText().toAscii();
 #endif
             File.write(contenido);
-            File.close();
             res=0;
         }
         else res=-1;//JORGE

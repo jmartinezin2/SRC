@@ -20,6 +20,7 @@
 #include "globals.h"
 #include "in2log.h"
 #include <QDate>
+#include <QApplication>
 
 //Columnas
 #define COLUMNAS_MANTENIMIENTO 4
@@ -81,8 +82,7 @@ QString In2GestorMantenimiento::checkCambioFiltros(){
     }
     MemoryMap *memoryMap=MemoryMap::request(0);
     QDate qdtFechaCambioFiltro=QDate::fromString(m_qstrFechaCambioFiltro,"yyyy-MM-dd");
-    QDate qdtNextCambio=qdtFechaCambioFiltro.addDays(memoryMap->m_mapa.m_maquina.DiasMaximosUsoFiltro);
-
+    QDate qdtNextCambio=qdtFechaCambioFiltro.addDays(memoryMap->m_mapa.m_maquina.DiasMaximosUsoFiltro);    
     if (QDate::currentDate()>=qdtNextCambio){
         m_bCambioFiltros=true;
     }

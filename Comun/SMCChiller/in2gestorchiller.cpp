@@ -190,7 +190,7 @@ void In2GestorChiller::sltMonitoring(){
 
 /** Coge datos de fluidica*/
 void In2GestorChiller::sltGetFluidicData(){
-
+#ifdef DEPURACION_IN2
     for (int x=0;x<m_numEquipos;x++){
         In2SMCControl *equipo=m_equipos.at(x);
         equipo->readAllData(x);
@@ -240,8 +240,8 @@ void In2GestorChiller::sltGetFluidicData(){
             setAlarm3Change(x,false);
             emit sglCambioAlarm3(x);
         }*/
-
     }
+#endif
 }
 
 

@@ -1813,7 +1813,7 @@ void Maquina::CancelarSeleccion(){
         QMessageBox::warning(this,"ERROR","Pare primero la m?quina",QMessageBox::Ok);
         return;
     }*/
-    StopThreads();
+
     LaunchPrincipal();
 }
 /** Pregunto por donde va*/
@@ -2096,9 +2096,10 @@ void Maquina::updateImpresiones(){
     if (gs){
         DWORD SwatheCount[MAXHEADS * MAXROWS];
         memset(&SwatheCount,0x00,sizeof(SwatheCount));
-        gs->readSwathePrintCount(0,&SwatheCount[0]);
+        gs->readSwathePrintCount(0,&SwatheCount[memoryMap->m_mapa.m_maquina.iCounter]);
         MemoryMap *memoryMap=MemoryMap::request(0);
         memoryMap->m_mapa.m_maquina.iCounter=SwatheCount[0];
+
     }
 }
 
